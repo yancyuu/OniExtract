@@ -97,6 +97,33 @@ public class ExportBuilding : BaseExport
         bBuild.selfHeatKilowatts = ReadFloatField(buildingDef, "SelfHeatKilowattsWhenActive", "SelfHeatKilowatts");
         bBuild.exhaustHeatKilowatts = ReadFloatField(buildingDef, "ExhaustKilowattsWhenActive", "ExhaustKilowatts");
         bBuild.overheatTemperature = ReadFloatField(buildingDef, "OverheatTemperature", "overheatTemperature");
+        Wire wire = go.GetComponent<Wire>();
+        if (wire != null)
+        {
+            try
+            {
+                object rating = wire.MaxWattageRating;
+                // 版本间 API 名字不稳定，反射找 Wire 上把档位换算成瓦数的静态方法
+                foreach (var m in typeof(Wire).GetMethods(System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static))
+                {
+                    var ps = m.GetParameters();
+                    if (m.Name.Contains("Wattage") && ps.Length == 1 && ps[0].ParameterType == rating.GetType())
+                    {
+                        object val = m.Invoke(null, new object[] { rating });
+                        bBuild.wireMaxWattage = System.Convert.ToSingle(val);
+                        break;
+                    }
+                }
+                if (bBuild.wireMaxWattage < 0f)
+                {
+                    // 兜底：档位名里带数字（如 Num1kW / Num2kW / Num20kW）
+                    var n = rating.ToString();
+                    var mm = System.Text.RegularExpressions.Regex.Match(n, @"(\d+)kW");
+                    if (mm.Success) bBuild.wireMaxWattage = float.Parse(mm.Groups[1].Value) * 1000f;
+                }
+            }
+            catch { }
+        }
         EnergyGenerator energyGenerator = go.GetComponent<EnergyGenerator>();
         if (energyGenerator != null)
         {

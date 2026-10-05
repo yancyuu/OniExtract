@@ -30,6 +30,7 @@ namespace OniExtract2024
         public float selfHeatKilowatts;
         public float exhaustHeatKilowatts;
         public float overheatTemperature;
+        public float wireMaxWattage = -1f;
         public OutEnergyGenerator energyGenerator;
         public OutConduitConsumer conduitConsumer;
         public OutConduitDispenser conduitDispenser;

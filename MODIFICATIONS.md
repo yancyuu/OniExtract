@@ -8,3 +8,4 @@
 3. `model/BBuildingEntity.cs`：新增 powerConsumption / energyConsumptionWhenActive / selfHeatKilowatts / exhaustHeatKilowatts / overheatTemperature 字段
 4. `OniExtract2024.csproj`：GameLibsFolder 指向本机游戏路径（按需自行修改）
 5. `Patches.cs`：新增 BuildingDef 字段调试导出（debug_buildingdef.txt）和动物代谢 Def 调试导出（debug_critters.txt）
+6. `ExportBuilding.cs` / `model/BBuildingEntity.cs`：新增电线负载上限导出（wireMaxWattage，反射兼容 API 改名）
