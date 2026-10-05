@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F6882D7-CA4B-49A1-B7B5-C674C8BC40BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OniExtract2024</RootNamespace>
+    <AssemblyName>OniExtract2024</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!--Gamedata Folder, adjust to your own ONI installation-->
+    <GameLibsFolder>G:\Steam\steamapps\common\OxygenNotIncluded\OxygenNotIncluded_Data\Managed</GameLibsFolder>
+    <!--OutputModFolder, adjust it to your own dev folder-->
+    <ModFolder>$(UserProfile)\Documents\Klei\OxygenNotIncluded\mods\dev</ModFolder>
+    <!--Default for dev folder: -->
+    <!--<ModFolder>$(UserProfile)\Documents\Klei\OxygenNotIncluded\mods\dev</ModFolder>-->
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>$(GameLibsFolder)\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(GameLibsFolder)\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>$(GameLibsFolder)\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(GameLibsFolder)\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PLib, Version=4.15.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PLib.4.15.0\lib\net471\PLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameLibsFolder)\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameLibsFolder)\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(GameLibsFolder)\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(GameLibsFolder)\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseExport.cs" />
+    <Compile Include="ExportAttr.cs" />
+    <Compile Include="ExportTag.cs" />
+    <Compile Include="ExportPOString.cs" />
+    <Compile Include="ExportFood.cs" />
+    <Compile Include="ExportGeyser.cs" />
+    <Compile Include="ExportItem.cs" />
+    <Compile Include="ExportRecipe.cs" />
+    <Compile Include="ExportElement.cs" />
+    <Compile Include="ExportDb.cs" />
+    <Compile Include="ExportBuilding.cs" />
+    <Compile Include="ExportEntity.cs" />
+    <Compile Include="ExportMultiEntity.cs" />
+    <Compile Include="ExportUISprite.cs" />
+    <Compile Include="Mod.cs" />
+    <Compile Include="model\BEquipment.cs" />
+    <Compile Include="model\BSeed.cs" />
+    <Compile Include="model\BEgg.cs" />
+    <Compile Include="model\BColor.cs" />
+    <Compile Include="model\BElement.cs" />
+    <Compile Include="model\BKprefabID.cs" />
+    <Compile Include="model\OutAttributeModifierSickness.cs" />
+    <Compile Include="model\SicknessComponent.cs" />
+    <Compile Include="model\OutChoreGroup.cs" />
+    <Compile Include="model\OutChoreType.cs" />
+    <Compile Include="model\OutScheduleBlockType.cs" />
+    <Compile Include="model\OutScheduleGroup.cs" />
+    <Compile Include="model\OutSpice.cs" />
+    <Compile Include="model\OutStatusItem.cs" />
+    <Compile Include="model\OutStorage.cs" />
+    <Compile Include="model\OutSuitTank.cs" />
+    <Compile Include="model\OutStory.cs" />
+    <Compile Include="model\OutTech.cs" />
+    <Compile Include="model\OutTechItem.cs" />
+    <Compile Include="model\OutTrait.cs" />
+    <Compile Include="model\OutTraitGroup.cs" />
+    <Compile Include="model\BBuildingEntity.cs" />
+    <Compile Include="model\BuildMenuCategory.cs" />
+    <Compile Include="model\OutBattery.cs" />
+    <Compile Include="model\OutCargoBay.cs" />
+    <Compile Include="model\OutCargoBayCluster.cs" />
+    <Compile Include="model\OutConduitConsumer.cs" />
+    <Compile Include="model\OutConduitDispenser.cs" />
+    <Compile Include="model\OutConsumedElement.cs" />
+    <Compile Include="model\OutElementConsumer.cs" />
+    <Compile Include="model\OutElementConverter.cs" />
+    <Compile Include="model\OutEnergyGenerator.cs" />
+    <Compile Include="model\OutLight2D.cs" />
+    <Compile Include="model\OutOperational.cs" />
+    <Compile Include="model\OutOutputElement.cs" />
+    <Compile Include="model\OutPassiveElementConsumer.cs" />
+    <Compile Include="model\OutPlantablePlot.cs" />
+    <Compile Include="model\BVector2.cs" />
+    <Compile Include="model\OutBlightVulnerable.cs" />
+    <Compile Include="model\OutComet.cs" />
+    <Compile Include="model\OutDecorProvider.cs" />
+    <Compile Include="model\OutDecorToggler.cs" />
+    <Compile Include="model\OutDrowningMonitor.cs" />
+    <Compile Include="model\OutFactionAlignment.cs" />
+    <Compile Include="model\OutGrowing.cs" />
+    <Compile Include="model\OutHealth.cs" />
+    <Compile Include="model\OutIlluminationVulnerable.cs" />
+    <Compile Include="model\OutIncubationMonitorDef.cs" />
+    <Compile Include="model\OutOxygenBreather.cs" />
+    <Compile Include="model\OutPickupable.cs" />
+    <Compile Include="model\OutPressureVulnerable.cs" />
+    <Compile Include="model\OutPrimaryElement.cs" />
+    <Compile Include="model\OutPrioritizable.cs" />
+    <Compile Include="model\BEntity.cs" />
+    <Compile Include="model\OutManualDeliveryKG.cs" />
+    <Compile Include="model\OutMutantPlant.cs" />
+    <Compile Include="model\OutNavigator.cs" />
+    <Compile Include="model\OutTemperatureVulnerable.cs" />
+    <Compile Include="model\BUISprite.cs" />
+    <Compile Include="model\OutWiltConditions.cs" />
+    <Compile Include="model\BMultiEntity.cs" />
+    <Compile Include="model\OutClusterMapMeteorShowerVisualizer.cs" />
+    <Compile Include="model\OutClusterTraveler.cs" />
+    <Compile Include="model\OutMeteorShowerEvent.cs" />
+    <Compile Include="model\OutOccupyArea.cs" />
+    <Compile Include="model\OutRocketEngineCluster.cs" />
+    <Compile Include="model\OutRocketEngine.cs" />
+    <Compile Include="model\OutTreeFilterable.cs" />
+    <Compile Include="ModOptions.cs" />
+    <Compile Include="ModStrings.cs" />
+    <Compile Include="model\OutSpaceArtifact.cs" />
+    <Compile Include="Patches.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils\AnimTool.cs" />
+    <Compile Include="building\ImageCrop.cs" />
+    <Compile Include="building\UiImageRect.cs" />
+    <Compile Include="building\ExportBuildingImages.cs" />
+    <Compile Include="building\BuildingImageSnapshotter.cs" />
+    <Compile Include="connection\ExportConnectionSprites.cs" />
+    <Compile Include="connection\TileConnectionExtractor.cs" />
+    <Compile Include="connection\ConnectionSpriteSnapshotter.cs" />
+    <Compile Include="connection\ConnectionExportPatches.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mod.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="mod_info.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".editorconfig" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!--Merges all dlls in the output folder into a single dll-->
+  <Target Name="ILRepack" AfterTargets="Build" Condition="'$(IsPacked)' == 'true'">
+    <ItemGroup>
+      <InputAssemblies Include="$(TargetPath)" />
+      <InputAssemblies Include="$(TargetDir)\*.dll" Exclude="$(TargetPath); **/0Harmony.dll; **_public.dll ;**Newtonsoft.Json;**/System.*; **/Microsoft.*" />
+    </ItemGroup>
+    <ILRepack TargetPlatformVersion="v4" TargetKind="SameAsPrimaryAssembly" InputAssemblies="@(InputAssemblies)" Wildcards="true" LibraryPath="$(GameLibsFolder)" Parallel="true" OutputFile="$(TargetPath)" />
+  </Target>
+  <!--Copies the mod dll, the two yaml files and everything inside the ModAssets folder to the target mod folder-->
+  <Target Name="CopyModsToDevFolder" AfterTargets="ILRepack" Condition="'$(AssemblyName)' != 'UtilLibs' and '$(AssemblyName)' != 'Util_TwitchIntegrationLib'">
+    <Copy SourceFiles="&#xD;&#xA;      $(TargetDir)PLib.dll;&#xD;&#xA;      $(TargetDir)$(TargetName).dll;&#xD;&#xA;      $(TargetDir)mod.yaml;&#xD;&#xA;      $(TargetDir)mod_info.yaml;" DestinationFolder="$(ModFolder)\$(TargetName)_dev\" />
+  </Target>
+</Project>
