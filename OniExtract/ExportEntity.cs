@@ -460,7 +460,7 @@ public class ExportEntity : BaseExport
         Butcherable butcherable = gameObject.GetComponent<Butcherable>();
         if (butcherable != null)
         {
-            bEntity.butcherable = butcherable;
+            bEntity.butcherable = new OutButcherable(butcherable);
         }
         else
         {

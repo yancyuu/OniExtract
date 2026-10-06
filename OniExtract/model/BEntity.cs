@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace OniExtract
 {
@@ -138,7 +138,7 @@ namespace OniExtract
         //public RangedAttackable rangedAttackable;
         //public FactionAlignment factionAlignment;
         //public AnimEventHandler animEventHandler;
-        //public Butcherable butcherable;
+        //public OutButcherable butcherable;
         public CreatureBrain creatureBrain;
         public CritterTemperatureMonitor.Def critterTemperatureMonitorDef;
         //public ChoreConsumer choreConsumer;
@@ -229,7 +229,7 @@ namespace OniExtract
         public CreatureDebugGoToMonitor.Def creatureDebugGoToMonitorDef;
         public DeathMonitor.Def deathMonitorDef;
         public EntombVulnerable entombVulnerable;
-        public Butcherable butcherable;
+        public OutButcherable butcherable;
         public Baggable baggable;
         public Capturable capturable;
         public EggProtectionMonitor.Def eggProtectionMonitorDef;

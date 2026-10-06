@@ -148,6 +148,7 @@
     <Compile Include="model\OutPressureVulnerable.cs" />
     <Compile Include="model\OutPrimaryElement.cs" />
     <Compile Include="model\OutPrioritizable.cs" />
+    <Compile Include="model\OutButcherable.cs" />
     <Compile Include="model\BEntity.cs" />
     <Compile Include="model\OutManualDeliveryKG.cs" />
     <Compile Include="model\OutMutantPlant.cs" />
