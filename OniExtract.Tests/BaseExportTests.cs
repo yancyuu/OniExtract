@@ -1,7 +1,7 @@
 using System.IO;
 using Xunit;
 
-namespace OniExtract2024.Tests
+namespace OniExtract.Tests
 {
     public class BaseExportTests
     {

@@ -1,4 +1,4 @@
-﻿using OniExtract2024;
+﻿using OniExtract;
 using System;
 using System.Collections.Generic;
 using System.Reflection;

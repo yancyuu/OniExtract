@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace OniExtract2024.building
+namespace OniExtract.building
 {
     /// <summary>
     /// Pure pixel-level crop helpers. Extracted from BuildingImageSnapshotter so

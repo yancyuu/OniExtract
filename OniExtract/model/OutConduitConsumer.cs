@@ -1,6 +1,6 @@
 ﻿using static ConduitConsumer;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutConduitConsumer
     {

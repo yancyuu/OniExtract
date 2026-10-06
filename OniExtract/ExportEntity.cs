@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Reflection;
-using OniExtract2024;
+using OniExtract;
 using Klei.AI;
 
 public class ExportEntity : BaseExport

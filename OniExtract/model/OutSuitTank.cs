@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutSuitTank
     {

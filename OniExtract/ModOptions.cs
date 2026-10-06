@@ -1,9 +1,9 @@
 using Newtonsoft.Json;
 using PeterHan.PLib.Options;
 
-namespace OniExtract2024
+namespace OniExtract
 {
-    [ConfigFile("OniExtract2024.json", true, true)]
+    [ConfigFile("OniExtract.json", true, true)]
     [JsonObject(MemberSerialization.OptIn)]
     [RestartRequired]
     public class ModOptions : SingletonOptions<ModOptions>

@@ -1,4 +1,4 @@
-# OniExtract2024 — Export Schema Reference
+# OniExtract — Export Schema Reference
 
 Field-level reference for the 13 JSON files written by the main-menu export. For the overall
 output layout and the connection-sprite tool, see [README.md](README.md).

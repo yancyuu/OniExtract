@@ -1,10 +1,10 @@
 using System;
 using System.IO;
-using OniExtract2024.utils;
+using OniExtract.utils;
 using UnityEngine;
 using Bits = Rendering.BlockTileRenderer.Bits;
 
-namespace OniExtract2024.connection
+namespace OniExtract.connection
 {
     /// <summary>
     /// Extracts the 16 four-directional connection-state sprites for isKAnimTile

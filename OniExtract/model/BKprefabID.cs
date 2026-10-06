@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class BKprefabID
     {

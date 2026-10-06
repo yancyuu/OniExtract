@@ -1,6 +1,6 @@
 ﻿using Klei.AI;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutWiltConditions
     {

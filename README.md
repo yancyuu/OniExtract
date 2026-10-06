@@ -1,6 +1,6 @@
 English | [简体中文](README_cn.md)
 
-# OniExtract2024
+# OniExtract
 
 Dumps game data and images from game **Oxygen Not Included**.
 
@@ -24,10 +24,10 @@ download_depot <AppID> <DepotsID> <ManifestID>
 
 ## Build
 
-1. Open `OniExtract2024\OniExtract2024.csproj` in **Visual Studio Code**.
+1. Open `OniExtract\OniExtract.csproj` in **Visual Studio Code**.
 2. Check `<GameLibsFolder>` , adjust to your own game installation.
 3. Check `<ModFolder>` , adjust to your mod installation.
-4. Open `OniExtract2024.sln` in **Visual Studio**. Load up solution, click `Build`-`Build Solution`. 
+4. Open `OniExtract.sln` in **Visual Studio**. Load up solution, click `Build`-`Build Solution`. 
 5. Mod will be installed to your mod installation. default path: `Documents\Klei\OxygenNotIncluded\mods\dev`.
 
 ## Install
@@ -124,8 +124,8 @@ export/connection_sprites/{prefabId}/{bitmask}.png   (bitmask 0–15)
 
 | Type | Flag | Mechanism | Code |
 |---|---|---|---|
-| Utilities (wires/pipes/rails) | `isUtility` | Spawn a temp instance, snapshot each kanim state with the camera, then crop to one cell-centred square | [ConnectionSpriteSnapshotter.cs](OniExtract2024/connection/ConnectionSpriteSnapshotter.cs) |
-| Tiles | `isKAnimTile` | Resample the building's `BlockTileAtlas` into a fixed 1.5-cell canvas (cell centred) reproducing the game's geometry: connected edges trim flush to the cell boundary, disconnected edges overhang it by ¼ cell so caps bleed into the neighbour and tiles join seamlessly (no placement needed). `15.png` fills exactly the centre cell — the website's scale reference | [TileConnectionExtractor.cs](OniExtract2024/connection/TileConnectionExtractor.cs) |
+| Utilities (wires/pipes/rails) | `isUtility` | Spawn a temp instance, snapshot each kanim state with the camera, then crop to one cell-centred square | [ConnectionSpriteSnapshotter.cs](OniExtract/connection/ConnectionSpriteSnapshotter.cs) |
+| Tiles | `isKAnimTile` | Resample the building's `BlockTileAtlas` into a fixed 1.5-cell canvas (cell centred) reproducing the game's geometry: connected edges trim flush to the cell boundary, disconnected edges overhang it by ¼ cell so caps bleed into the neighbour and tiles join seamlessly (no placement needed). `15.png` fills exactly the centre cell — the website's scale reference | [TileConnectionExtractor.cs](OniExtract/connection/TileConnectionExtractor.cs) |
 
 To run: build + deploy the mod, launch ONI, load any colony or sandbox, open the pause screen
 (Esc), and click **Export Connection Sprites**. Progress and the output path are logged to

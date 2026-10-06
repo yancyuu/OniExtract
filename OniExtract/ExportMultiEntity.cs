@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-using OniExtract2024;
+using OniExtract;
 using Klei.AI;
 
 public class ExportMultiEntity : BaseExport

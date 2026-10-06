@@ -4,7 +4,7 @@ using System.Linq;
 using static STRINGS.UI.SPACEARTIFACTS;
 using static TUNING.DECOR;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutSpaceArtifact
     {

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Klei.AI;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutSicknessComponent
     {

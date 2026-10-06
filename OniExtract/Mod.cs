@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using PeterHan.PLib.Options;
 
-namespace OniExtract2024 {
+namespace OniExtract {
   public class Mod : KMod.UserMod2{
     public override void OnLoad(Harmony harmony) {
       base.OnLoad(harmony);

@@ -1,4 +1,4 @@
-using OniExtract2024;
+using OniExtract;
 using System.Collections.Generic;
 using static EdiblesManager;
 

@@ -1,4 +1,4 @@
-namespace OniExtract2024.building
+namespace OniExtract.building
 {
     /// <summary>
     /// The rendered ui_image PNG's rectangle in cell units, relative to the building

@@ -1,6 +1,6 @@
 using static EnergyGenerator;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutEnergyGenerator
     {

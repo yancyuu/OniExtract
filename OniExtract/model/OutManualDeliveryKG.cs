@@ -1,5 +1,5 @@
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutManualDeliveryKG
     {

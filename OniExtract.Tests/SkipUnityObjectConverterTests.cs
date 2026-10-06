@@ -2,7 +2,7 @@ using System.IO;
 using Newtonsoft.Json;
 using Xunit;
 
-namespace OniExtract2024.Tests
+namespace OniExtract.Tests
 {
     public class SkipUnityObjectConverterTests
     {

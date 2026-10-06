@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 
-namespace OniExtract2024.building
+namespace OniExtract.building
 {
     /// <summary>
     /// In-game building-image exporter. Triggered from a pause-screen button

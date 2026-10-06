@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using static Navigator;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutNavigator
     {

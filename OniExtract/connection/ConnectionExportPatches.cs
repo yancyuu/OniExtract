@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using HarmonyLib;
-using OniExtract2024.building;
+using OniExtract.building;
 using UnityEngine.Events;
 
-namespace OniExtract2024.connection
+namespace OniExtract.connection
 {
     /// <summary>
     /// Adds export buttons to the in-game pause screen. Kept separate from the

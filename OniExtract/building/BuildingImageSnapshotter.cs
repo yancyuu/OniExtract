@@ -1,6 +1,6 @@
 // Camera-snapshot rendering adapted from the GPL-2.0 project Sgt_Imalas-Oni-Mods
 // (AnimExportTool/AETE_KbacSnapShotter.cs), itself courtesy of Aki
-// (https://github.com/aki-art/ONI-Mods). Adapted for OniExtract2024 to render
+// (https://github.com/aki-art/ONI-Mods). Adapted for OniExtract to render
 // building icons at 200 px/cell and trim to the opaque bounding box.
 //
 // Difference from ConnectionSpriteSnapshotter: one shot per building (build-complete
@@ -15,7 +15,7 @@ using System.Linq;
 using HarmonyLib;
 using UnityEngine;
 
-namespace OniExtract2024.building
+namespace OniExtract.building
 {
     /// <summary>
     /// Attached to a temporary off-screen building. Snapshots the live kanim at

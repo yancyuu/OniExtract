@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static ClusterGridEntity;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutClusterMapMeteorShowerVisualizer
     {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using static TreeFilterable;
 using UnityEngine;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutTreeFilterable
     {

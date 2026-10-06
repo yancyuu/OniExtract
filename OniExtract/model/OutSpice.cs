@@ -1,7 +1,7 @@
 using Klei.AI;
 using static Database.Spice;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutSpice
     {

@@ -1,8 +1,8 @@
-using OniExtract2024.building;
+using OniExtract.building;
 using UnityEngine;
 using Xunit;
 
-namespace OniExtract2024.Tests
+namespace OniExtract.Tests
 {
     public class ImageCropTests
     {

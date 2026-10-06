@@ -1,7 +1,7 @@
 using Database;
 using ProcGen;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutStory
     {

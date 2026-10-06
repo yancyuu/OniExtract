@@ -10,7 +10,7 @@ using PeterHan.PLib.Options;
 using UnityEngine;
 using static STRINGS.UI.UISIDESCREENS;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class Patches
     {

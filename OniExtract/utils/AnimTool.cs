@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-namespace OniExtract2024.utils
+namespace OniExtract.utils
 {
     public class AnimTool
     {

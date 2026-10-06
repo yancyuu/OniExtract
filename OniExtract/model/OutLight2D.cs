@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using static UnityEngine.UI.Image;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutLight2D
     {

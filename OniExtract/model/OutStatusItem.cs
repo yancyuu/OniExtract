@@ -1,7 +1,7 @@
 ﻿using System;
 using static StatusItem;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutStatusItem
     {

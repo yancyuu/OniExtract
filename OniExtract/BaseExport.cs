@@ -6,7 +6,7 @@ using System.IO;
 using System.Reflection;
 using Path = System.IO.Path;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     // Unity 6 changed Transform.childCount to use TransformHandle internally.
     // When JSON.NET tries to serialize a UnityEngine.Object (e.g. Transform is IEnumerable<Transform>),

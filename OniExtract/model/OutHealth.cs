@@ -1,6 +1,6 @@
 using static Health;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutHealth
     {

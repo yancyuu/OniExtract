@@ -2,7 +2,7 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xunit;
 
-namespace OniExtract2024.Tests
+namespace OniExtract.Tests
 {
     public class ModelFieldTests
     {

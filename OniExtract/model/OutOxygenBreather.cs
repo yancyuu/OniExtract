@@ -1,7 +1,7 @@
 ﻿using KSerialization;
 using UnityEngine;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutOxygenBreather
     {

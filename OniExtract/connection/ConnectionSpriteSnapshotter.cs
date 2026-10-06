@@ -1,9 +1,9 @@
 // Camera-snapshot rendering adapted from the GPL-2.0 project Sgt_Imalas-Oni-Mods
 // (AnimExportTool/AETE_KbacSnapShotter.cs), itself courtesy of Aki
-// (https://github.com/aki-art/ONI-Mods). Adapted for OniExtract2024 to render the 16
+// (https://github.com/aki-art/ONI-Mods). Adapted for OniExtract to render the 16
 // utility connection states to PNG.
 //
-// Difference from the original: OniExtract2024 references the stock (non-publicized)
+// Difference from the original: OniExtract references the stock (non-publicized)
 // Assembly-CSharp, so KBatchedAnimController.batch and KAnimBatchManager.activeBatchSets
 // are not directly accessible. We reach them through HarmonyLib.Traverse.
 
@@ -14,7 +14,7 @@ using System.Linq;
 using HarmonyLib;
 using UnityEngine;
 
-namespace OniExtract2024.connection
+namespace OniExtract.connection
 {
     /// <summary>
     /// Attached to a temporary, freshly-created utility building. Plays each of the 16

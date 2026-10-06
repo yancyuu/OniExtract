@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class OutChoreType
     {

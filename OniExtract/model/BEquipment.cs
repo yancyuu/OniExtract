@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace OniExtract2024
+namespace OniExtract
 {
     public class BEquipment
     {

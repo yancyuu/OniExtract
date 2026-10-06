@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-namespace OniExtract2024.connection
+namespace OniExtract.connection
 {
     /// <summary>
     /// Separate, in-game connection-sprite exporter. Independent of the main-menu JSON

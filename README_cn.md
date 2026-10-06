@@ -1,6 +1,6 @@
 [English](README.md) | 简体中文
 
-# OniExtract2024
+# OniExtract
 
 导出游戏《缺氧》中的数据和图片。
 
@@ -24,10 +24,10 @@ download_depot <AppID> <DepotsID> <ManifestID>
 
 ## 构建项目
 
-1. 在 **Visual Studio Code** 中打开 `OniExtract2024\OniExtract2024.csproj` 。
+1. 在 **Visual Studio Code** 中打开 `OniExtract\OniExtract.csproj` 。
 2. 查看`<GameLibsFolder>` 标签，调整标签标记的内容为你的游戏安装目录。
 3. 查看`<ModFolder>` 标签，调整标签标记的内容为你的mod安装目录。
-4. 在 **Visual Studio** 打开 `OniExtract2024.sln` 。加载解决方案后, 点击`生成`-`生成解决方案`。
+4. 在 **Visual Studio** 打开 `OniExtract.sln` 。加载解决方案后, 点击`生成`-`生成解决方案`。
 5. mod将被安装到你的mod安装目录下。默认路径: `Documents\Klei\OxygenNotIncluded\mods\dev`。
 
 ## 安装

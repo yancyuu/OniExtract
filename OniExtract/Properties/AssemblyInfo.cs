@@ -2,16 +2,16 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: InternalsVisibleTo("OniExtract2024.Tests")]
+[assembly: InternalsVisibleTo("OniExtract.Tests")]
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OniExtract2024")]
+[assembly: AssemblyTitle("OniExtract")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OniExtract2024")]
+[assembly: AssemblyProduct("OniExtract")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
